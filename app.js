@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.get("/", function(req, res){
 
-    res.render("index");
+    res.render("index.ejs");
     
     
 
@@ -73,6 +73,6 @@ app.get("/gradeQuiz", function(req,res){
 
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Express server is running...");
-})
+app.listen(process.env.PORT , process.env.IP,function(){
+    console.log("Express Server is Running...");
+});
