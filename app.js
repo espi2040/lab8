@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
     
-    res.render("index.ejs");
+    res.render("index");
     
 } );
 
@@ -65,7 +65,6 @@ app.get("/gradeQuiz", function(req,res){
     
     
 })
-
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Express server is running...");
