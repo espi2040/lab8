@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
     
-    res.render("index");
+    res.render("index.ejs");
     
 } );
 
@@ -52,7 +52,7 @@ app.get("/gradeQuiz", function(req,res){
     }
    if (req.query.q7 == "d") {
         score += 20;
-        f7 = "You got it!";
+        q7 = "You got it!";
     }
      if (req.query.q8c =="checked" , req.query.q8d !="checked" ,req.query.q8a != "checked" ,req.query.q8b != "checked"){
      
